@@ -13,4 +13,9 @@ class RedisRepository extends AbstractRedisRepository
     {
         $this->client = new Client(config('database.redis.default'));
     }
+    
+    public function setData($data)
+    {
+        $this->client->set('test_key', $data);
+    }
 }

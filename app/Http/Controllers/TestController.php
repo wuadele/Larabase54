@@ -17,7 +17,7 @@ class TestController extends Controller
     
     public function __construct(Repository $repository)
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
         $this->repository = $repository;
         Logger::debug(self::TAG, "construct");
     }
