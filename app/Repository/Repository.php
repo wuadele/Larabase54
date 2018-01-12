@@ -11,7 +11,7 @@ class Repository
     private $mysqlAccessObject;
     private $redisAccessObject;
     
-    public function __construct(Repository $repository)
+    public function __construct()
     {
         $this->mysqlAccessObject = new MySqlRepository();
         $this->redisAccessObject = new RedisRepository();
